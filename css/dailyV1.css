@@ -1,0 +1,33 @@
+.daily-nav {
+    float: left;
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #335075;
+    height: 7%;
+    z-index: 10;
+}
+
+
+.dailymenuitem {
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+<div class="daily-nav">
+      <div class="searchdaily"><a href="" title="Search the daily."></a></div>
+       <div class="daily-menu">
+          <ul>
+           <li class="dailymenuitem">Schedule</li>
+           <li class="dailymenuitem">Indicators</li>
+           <li class="dailymenuitem">Subjects</li>
+           <li class="dailymenuitem">Interests</li>
+          </ul>
+       </div>
+   </div>
