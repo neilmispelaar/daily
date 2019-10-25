@@ -50,6 +50,11 @@
     @title: Home page styles
 
 */ }
+main {
+  font-size: inherit;
+  line-height: inherit;
+
+}
 .dailylogo{
     width: 100%;
     text-align: center;
@@ -63,7 +68,7 @@
     position: fixed;
     left: 50%;
     margin-left: -26px;
-    bottom: 55px;
+    bottom: 44px;
     z-index: 12;
     background: #F5A623 0% 0% no-repeat padding-box;
     box-shadow: 2px 1px 2px #00000061;
@@ -73,7 +78,7 @@
 
   .statcan-sdr h2 {
     padding-bottom: 5px;
-    font: Bold 20px/24px Lato;
+    font: Bold 24px Lato;
     border-bottom: 2px solid #f5a623; }
   .statcan-sdr .navigation {
         float: left;
@@ -83,7 +88,7 @@
     bottom: 0;
     width: 100%;
     background-color: #335075;
-    height: 80px;
+    height: 70px;
     z-index: 10;
     /* Hide the navigation header */
     /* The wrapper around the banner image */
@@ -125,7 +130,7 @@
           
           width: 22%;
           display: inline-block;
-          padding-top: 18px;
+          padding-top: 11px;
           text-align: center; 
           line-height: 20px;}
         .statcan-sdr .navigation ul.navigation-links li a {
@@ -302,15 +307,14 @@
 						*/ }
 
             .statcan-sdr .indicators ul.indicators-list li .indicator-card dl dd.indicator-metric-value {
-              font-size: 16px;
+              font-size: 18px;
               font-weight: bolder;
-                margin-top: -5px;
               order: 2; }
             .statcan-sdr .indicators ul.indicators-list li .indicator-card dl dd.indicator-change-value {
-              font: Bold 24px/27px;
+              font-size: 21px;
                 position: relative;
                 right: 28px;
-                top: -20px;
+                top: -27px;
               font-weight: bolder;
               margin: 0px 0px 0px auto;
               padding: 0px;
@@ -318,7 +322,7 @@
             .statcan-sdr .indicators ul.indicators-list li .indicator-card dl dd.indicator-delta-value {
                 position: relative;
                 left: 170px;
-                bottom: 93px;
+                bottom: 100px;
               order: 4; }
         .statcan-sdr .indicators ul.indicators-list li:last-child {
           padding-right: 40px !important; }
@@ -332,14 +336,14 @@
       display: flex;
       flex-direction: column; }
       .statcan-sdr ul.article-cards-style-main li .article-card .article-card-title {
-        margin-top: 10px;
-        font-size: 18px;
+        margin-top: 0px;
+        font-size: 21px;
         font-weight: bolder; }
         .statcan-sdr ul.article-cards-style-main li .article-card .article-card-title a {
           text-decoration: none !important; }
         .statcan-sdr ul.article-cards-style-main li .article-card .article-card-title h2, .statcan-sdr ul.article-cards-style-main li .article-card .article-card-title h3, .statcan-sdr ul.article-cards-style-main li .article-card .article-card-title h4, .statcan-sdr ul.article-cards-style-main li .article-card .article-card-title h5, .statcan-sdr ul.article-cards-style-main li .article-card .article-card-title h6 {
           margin: 0px;
-          padding: 0px;
+          padding: 0px 0px 8px 0px;
           font-size: inherit; }
       .statcan-sdr ul.article-cards-style-main li .article-card .article-card-information {
         order: -1;
@@ -347,16 +351,17 @@
         flex-direction: row;
         justify-content: space-between; }
         .statcan-sdr ul.article-cards-style-main li .article-card .article-card-information .article-card-category {
-          font-size: 16px;
+          font-size: 14px;
           color: #335075;
           font-weight: bold;
-          padding: 0px;
+          padding: 0px 0px 8px 0px;
           margin: 0px;
           display: flex;
           flex-direction: row; }
           .statcan-sdr ul.article-cards-style-main li .article-card .article-card-information .article-card-category a {
             color: #335075;
-            text-decoration: none; }
+            text-decoration: none; 
+            }
         .statcan-sdr ul.article-cards-style-main li .article-card .article-card-information .article-card-new {
           background-color: #114a80;
           color: #fff;
@@ -397,8 +402,8 @@
           text-decoration: none !important; }
         .statcan-sdr ul.article-cards-style-sub li .article-card .article-card-title h2, .statcan-sdr ul.article-cards-style-sub li .article-card .article-card-title h3, .statcan-sdr ul.article-cards-style-sub li .article-card .article-card-title h4, .statcan-sdr ul.article-cards-style-sub li .article-card .article-card-title h5, .statcan-sdr ul.article-cards-style-sub li .article-card .article-card-title h6 {
           margin: 0px;
-          padding: 0px;
-          font-size: inherit; }
+          padding: 0px 0px 8px 0px;
+          font-size: 20px; }
       .statcan-sdr ul.article-cards-style-sub li .article-card .article-card-information {
         order: -1;
         display: flex;
@@ -600,3 +605,4 @@
 .daily-well p{
     margin-bottom: 0;
 }
+
