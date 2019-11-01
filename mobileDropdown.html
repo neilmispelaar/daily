@@ -12,7 +12,7 @@
 
         
         
-        <link rel="stylesheet" href="/css/mobileStickynav.css">
+    
 
     
 
@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/css/theme.min.css">
-    
+        <link rel="stylesheet" href="/css/mobileDropdown.css">
     
     
     <noscript>
@@ -54,6 +54,7 @@
             </ul>
 
         <header>
+            <!--Hi-->
             <div id="wb-bnr" class="container">
                 <section id="wb-lng" class="text-right">
                     <h2 class="wb-inv">
@@ -160,20 +161,16 @@
 <nav class="navigation">
 
     
-    <h2>Statistics Canada The Daily Main Navigation</h2>
 
-    
-     <div class="searchDiv">
-           <a href="" title="Search The Daily"><img src="/daily/img/icosearch.png" class="navIcon" alt="Icon search"></a>
-     </div>
-
-
-    <ul class="navigation-links">
-        <li><a href=""><img src="img/icoschedule.png" class="navIcon" alt="Icon Schedule"><br>Schedule</a></li>
-        <li class="spaceright"><a href=""><img src="/daily/img/icoindicators.png" class="navIcon" alt="Icon Schedule"><br>Indicators</a></li>
-        <li><a href="spaceleft"><img src="/daily/img/icosubjects.png" class="navIcon" alt="Icon Schedule"><br>Subject</a></li>
-        <li><a href=""><img src="/daily/img/icointerests.png" class="navIcon" alt="Icon Schedule"><br>Interest</a></li>
-    </ul>
+    <div class="drop-nav">
+       <button onclick="navDropdown()"><h3><span class="wb-inv">Statistics Canada The Daily Main Navigation </span>Pages <img src="img/layoutimg/navArrow.png" class="navIcon navarrow" alt="Icon Schedule"></h3></button>
+        <ul class="navigation-links" id="testID">
+            <li><a href="#"><img src="img/icoscheduleblue.png" class="navIcon" alt="Icon Schedule"> Schedule</a></li>
+            <li><a href="#"><img src="img/icoindicatorsblue.png" class="navIcon" alt="Icon Indicators"> Indicators</a></li>
+            <li><a href="#"><img src="img/icosubjectsblue.png" class="navIcon" alt="Icon Subjects"> Subject</a></li>
+            <li><a href="https://www.google.ca/"><img src="img/icointerestsblue.png" class="navIcon" alt="Icon Interest"> Interest</a></li>
+        </ul>
+    </div>
 
 </nav>
 
@@ -181,21 +178,15 @@
 <!-- Scope Class: statcan-sdr -->
 <div class="statcan-sdr">
 
-    <h1 property="name" id="wb-cont" class="sr-only">Provincial and territorial economic accounts, 2017</h1>
+    <h1 property="name" id="wb-cont" class="sr-only">Smart Daily Redesign</h1>
 
     <section>
         <div class="dailylogo">
-            <img src="/daily/img/layoutimg/theDaily.png" alt="The Daily logo">
+            <img src="img/layoutimg/theDaily.png" alt="The Daily logo">
         </div>
         <div class="indicators">
-        
-            <p>Wednesday, January 23, 2019</p>
 
-			<h3>Provincial and territorial economic accounts, 2017</h3>
-			
-			<h5>Released: 2019 - 01 - 24</h5>
-			
-			<hr class="header-end">
+			<h2>Indicators</h2>
 
 			<ul class="indicators-list">
 
@@ -213,7 +204,7 @@
 							<dd class="indicator-change-value">2.3%</dd>
 
 							<dt>Delta:</dt>
-							<dd class="indicator-delta-value"><img src="/daily/img/indicatorUp.png" alt="Indicator value up"></dd>
+							<dd class="indicator-delta-value"><img src="img/indicatorUp.png" alt="Indicator value up"></dd>
 
 						</dl>
 
@@ -234,7 +225,7 @@
                             <dd class="indicator-change-value">55.3%</dd>
 
                             <dt>Delta:</dt>
-                            <dd class="indicator-delta-value"><img src="/daily/img/indicatorUp.png" alt="Indicator value up"></dd>
+                            <dd class="indicator-delta-value"><img src="img/indicatorUp.png" alt="Indicator value up"></dd>
 
                         </dl>
 
@@ -256,7 +247,7 @@
                             <dd class="indicator-change-value">-32.7%</dd>
 
                             <dt>Delta:</dt>
-                            <dd class="indicator-delta-value"><img src="/daily/img/indicatorDown.png" alt="Indicator value down"></dd>
+                            <dd class="indicator-delta-value"><img src="img/indicatorDown.png" alt="Indicator value down"></dd>
 
                         </dl>
 
@@ -278,7 +269,7 @@
                             <dd class="indicator-change-value">25.5%</dd>
 
                             <dt>Delta:</dt>
-                            <dd class="indicator-delta-value"><img src="/daily/img/indicatorUp.png" alt="Indicator value up"></dd>
+                            <dd class="indicator-delta-value"><img src="img/indicatorUp.png" alt="Indicator value up"></dd>
 
                         </dl>
 
@@ -299,7 +290,7 @@
                             <dd class="indicator-change-value">-45.3%</dd>
 
                             <dt>Delta:</dt>
-                            <dd class="indicator-delta-value"><img src="/daily/img/indicatorDown.png" alt="Indicator value down"></dd>
+                            <dd class="indicator-delta-value"><img src="img/indicatorDown.png" alt="Indicator value down"></dd>
 
                         </dl>
 
@@ -323,53 +314,167 @@
 
         <div class="row">
 
-            <div class="col-md-12">
+            <div class="col-md-7">
 
-            <hr class="header-end">
+				<h2 class="newsh2">In the news</h2>
 
 				<ul class="article-cards-style-main">
 
 					<li>
 						<article class="article-card">
 
+							<div class="article-card-title">
+								<h3>Study: The gender wage gap in Canada: 1998 to 2018</h3>
+							</div>
+
+							<div class="article-card-information">
+								<p class="article-card-category"><a href="#"><span class="wb-inv">Category: </span>Labour</a></p>
+							</div>
+
+							<div class="article-card-content">
+
+								<div class="article-card-image">
+                                    <img src="img/article/business-women-collaborate.jpg" alt="" />
+
+								</div>
 								
 
-                            <div class="article-card-text font-size-16">
+								<div class="article-card-text">
+                                    
+                                    <p class="card-date"><strong><span class="wb-inv">Date: </span>October 7, 2019, 3:07 PM</strong></p>
 
-									<p>In Ontario, the number of people receiving EI benefits increased 2.6% from October to 115,700 in November. This was the first notable increase since May, as the number of E beneficiaries in the province had trended down since the start of 2017. Increases in November were observed across most census metropolitan areas (CMAs). The most notable was in Windsor (+21.7%), which coincided with the temporary shutdown of an automobile manufacturing plant. On a year-over-year basis, the number of E beneficiaries in the province fell by 9.8%.</p>
-									<p>The number of E beneficiaries in New Brunswick rose 2.5% to 29,800, the fifth increase in six months, following a low point in 2017.</p>
-                            </div>
-																
-                            <div class="height-image-fix col-md-12 height-max-200">
-                                <img src="/daily/img/layoutimg/mobilearticle1in7.png" alt="" />
-                                <p>Number of cases completed in adult criminal court increases for the first time in seven years</p>
-                            </div>
+									<p>A new study, "The gender wage gap in Canada: 1998 to 2018," is now available as part of the Labour Statistics Research Papers series.</p>
 
-                            <div class="article-card-text font-size-16">
+									<a href="#" class="readmorea">Read more <span class="wb-inv">about "Study: The gender wage gap in Canada: 1998 to 2018"</span></a>
 
-                                <p>Over the past decade, both adult criminal and youth court cases have shown a trend towards longer, more complex cases, involving more charges and appearances per case. The average number of charges in youth court cases grew from 3.3 in 2007/2008 to 3.9 in 2016/2017. Over the same period in adult criminal court, the number increased from 2.9 to 3.4.</p>
-                                <p>Similarly, the average number of appearances per case in adult criminal court increased from 6.7 in 2007/2008 to 7.7 in 2016/2017. In youth court, the average rose from 5.6 appearances per case in 2007/2008 to 7.0 in 2016/2017</p>
-                            </div>
-                            
-                            <div class="height-image-fix col-md-12 height-max-200">
-                                <img src="/daily//img/layoutimg/mobilearticlechart1.PNG" alt="" />
-                            </div>
-                            
-                            <div class="daily-well">
-                                <p class="font-size-16">Table 1</p>
-                                <p class="font-table-title">Canada's international transactions in securities</p>
-                            </div>
-                            
-								
+								</div>
+
+							</div>
 
 						</article>
                     </li>
 
+                    <li>
+						<article class="article-card">
+
+							<div class="article-card-title">
+								<h3>Asphalt roofing material, August 2019</h3>
+							</div>
+
+							<div class="article-card-information">
+								<p class="article-card-category"><a href="#"><span class="wb-inv">Category: </span>Manufacturing</a></p>
+							</div>
+
+							<div class="article-card-content">
+
+								<div class="article-card-image">
+									<img src="img/article/aerial-shot-architecture.jpg" alt="" />
+								</div>
+
+								<div class="article-card-text">
+                                    
+                                    <p class="card-date"><strong><span class="wb-inv">Date: </span>October 9, 2019, 1:02 PM</strong></p>
+
+									<p>Shipments of asphalt shingles totalled 2.5 million metric bundles in August, down 30.2% from the previous month and down 29.1% from August 2018.</p>
+
+								<a href="" class="readmorea">Read more <span class="wb-inv">about "Asphalt roofing material, August 2019"</span></a>
+
+								</div>
+
+							</div>
+
+						</article>
+					</li>
+
 				</ul>
 
             </div>
-        </div>
 
+			<div class="col-md-5">
+
+				<div class="sub-content-container">
+
+					<div class="sub-articles-container">
+
+						<h2>Sub Main Articles</h2>
+
+						<ul class="article-cards-style-sub">
+							<li>
+								<article class="article-card">
+
+									<div class="article-card-title">
+										<h3>Diversity of the Black population in Canada: An overview</h3>
+									</div>
+
+									<div class="article-card-information">
+										<p class="article-card-category"><a href="#"><span class="wb-inv">Category: </span>Immigration and ethnocultural diversity</a></p>
+									</div>
+
+									<div class="article-card-content">
+
+										<div class="article-card-image">
+											<img src="img/article/business-women-collaborate.jpg" alt="" />
+
+										</div>
+
+										<div class="article-card-text">
+                                            <p class="card-date"><strong><span class="wb-inv">Date: </span>October 3, 2019, 3:01 PM</strong></p>
+
+											<p>A new study, "The gender wage gap in Canada: 1998 to 2018," is now available as part of the Labour Statistics Research Papers series.</p>
+
+											<a href="" class="readmorea">Read more <span class="wb-inv">about "Study: The gender wage gap in Canada: 1998 to 2018"</span></a>
+
+										</div>
+
+									</div>
+
+								</article>
+							</li>
+
+							<li>
+								<article class="article-card">
+
+									<div class="article-card-title">
+										<h3>Asphalt roofing material, August 2019</h3>
+									</div>
+
+									<div class="article-card-information">
+										<p class="article-card-category"><a href="#"><span class="wb-inv">Category: </span>Manufacturing</a></p>
+									</div>
+
+									<div class="article-card-content">
+
+										<div class="article-card-image">
+											<img src="img/article/aerial-shot-architecture.jpg" alt="" />
+										</div>
+										
+										<p class="card-date"><span class="wb-inv">Date: </span></p>
+
+										<div class="article-card-text">
+                                            <p class="card-date"><strong><span class="wb-inv">Date: </span>October 2, 2019, 8:31 AM</strong></p>
+
+											<p>Shipments of asphalt shingles totalled 2.5 million metric bundles in August, down 30.2% from the previous month and down 29.1% from August 2018.</p>
+
+											<a href="" class="readmorea">Read more <span class="wb-inv">about "Asphalt roofing material, August 2019"</span></a>
+
+										</div>
+
+									</div>
+
+								</article>
+							</li>
+
+						</ul>
+
+					</div>
+
+					
+
+				</div>
+
+            </div>
+
+        </div>
 
     </section>
 
@@ -388,14 +493,14 @@
 						<article class="product-card">
 							<h3>
 								<span class="wb-inv">Title: </span>Canadian Labor Market Observatory: "Earnings and payroll employment in brief: Interactive app"</h3>
-							<dl>
-								<dt>Catalogue Number <a href="https://www150.statcan.gc.ca/n1/pub/14-20-0001/142000012019001-eng.htm">142000012019001 (<span class="sr-only">Product Type:</span>HTML)</a></dt>
+							 <dl>
+                                 <dt>Catalogue Number <a href="https://www150.statcan.gc.ca/n1/pub/14-20-0001/142000012019001-eng.htm">142000012019001 (<span class="sr-only">Product Type:</span>HTML)</a></dt>
 							</dl>
 						</article>
 					</li>
 
                     <li>
-						<article class="product-card">
+						<article class="product-card">    
 							<h3>
 								<span class="wb-inv">Title: </span>Canadian Labor Market Observatory: "Earnings and payroll employment in brief: Interactive app"</h3>
 							<dl>
@@ -415,7 +520,7 @@
 					</li>
 					<li>
                     <article class="product-card">
-                        <h3><a href="https://www.statcan.gc.ca/eng/interact/datavis" class="readmorea" title="See all products">See all products</a></h3>
+                        <a href="https://www.statcan.gc.ca/eng/interact/datavis" class="readmorea" title="See all products">See all products</a>
                         </article>
 
 				</ul>
@@ -425,6 +530,20 @@
 
             </div>
             
+            <section class="col-md-6">
+            
+            <div class="you-may-also-like-container">
+
+						<h2>You May Also Like</h2>
+
+						<ul class="ymalul">
+							<li><a href="https://www.statcan.gc.ca/eng/mystatcan/login" title="My StatCan">My StatCan</a></li>
+							<li><a href="https://www150.statcan.gc.ca/n1/pub/11-636-x/index-eng.htm" title="The Weekly Review">The Weekly Review</a></li>
+							<li><a href="https://www.statcan.gc.ca/eng/dai/economicstats/2019-05-03" title="Watch: Review of Economic Statistics">Watch: Review of Economic Statistics</a></li>
+						</ul>
+
+					</div>
+            </section>
 
             <div class="col-md-6">
 
@@ -622,7 +741,8 @@
         
         <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/wet-boew.min.js"></script>
-        <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_31/js/theme.min.js"></script>
+        <script src="js/mobiledropdown.js"></script>
+   
         
         </body>
 </html>

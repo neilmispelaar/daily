@@ -80,16 +80,33 @@ main {
     padding-bottom: 5px;
     font: Bold 24px Lato;
     border-bottom: 2px solid #f5a623; }
+.statcan-sdr .drop-nav button,
+.statcan-sdr .drop-nav button:active,
+.statcan-sdr .drop-nav button:active:after {
+    background: none;
+    border: none;
+}
+.statcan-sdr .drop-nav button h3{
+    padding: 3px;
+    margin-bottom: 0;
+    margin-top: 18px;
+    padding-left: 12px;
+    width: 130px;
+    border: 2px solid #335075;
+    border-radius: 5px;
+    font: Bold 18px/22px Lato;
+    letter-spacing: 0;
+    color: #335075;
+    opacity: 1;
+}
+.drop-nav:hover li {
+    visibility: visible;
+}
   .statcan-sdr .navigation {
-        float: left;
+    float: right;
     display: block;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #335075;
-    height: 70px;
-    z-index: 10;
+    width: 130px;
+    height: 50px;
     /* Hide the navigation header */
     /* The wrapper around the banner image */
     /* The list of links for the navigation entries */ }
@@ -115,26 +132,30 @@ main {
     .statcan-sdr .navigation .navigation-banner {
       align-self: center; }
     .statcan-sdr .navigation ul.navigation-links {
+        display: none;
         list-style: none;
         text-align: center;
         color: #ffffff;
-        width: 100%;
+        background-color: white;
+        width: 130px;
         padding-left: 0;
 }
       @media screen and (min-width: 768px) {
         .statcan-sdr .navigation ul.navigation-links {
           flex-direction: row;
           justify-content: space-around;
-          background-color: green; } }
+          background-color: black; } }
       .statcan-sdr .navigation ul.navigation-links li {
-          
-          width: 22%;
-          display: inline-block;
-          padding-top: 11px;
-          text-align: center; 
-          line-height: 20px;}
+          border-bottom: 1px solid #335075;
+          float: left;
+          width: 100%;
+          padding: 6px;
+          text-align: left;
+          background-color: white;
+          position: relative;
+          z-index: 50;              }
         .statcan-sdr .navigation ul.navigation-links li a {
-            color: white;
+            color: #335075;
             font-weight: bold;
             text-decoration: none;
             font-size: 12px;}
@@ -608,3 +629,20 @@ main {
     margin-bottom: 0;
 }
 
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+.navarrow {
+    float: right;
+    margin: 6px;
+}
+
+.show {
+    display: block;
+}
